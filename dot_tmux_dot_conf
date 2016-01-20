@@ -22,6 +22,9 @@ bind ^l resize-pane -R 5
 #set status line right format
 set -g status-right "%Y-%m-%d %H:%M:%S"
 
+#bug fix for gentoo can't use my window name
+set -g allow-rename off
+
 #make a session with two window automatic
 #new-session -s development -n main -d
 #new-window -n tmp -t development
